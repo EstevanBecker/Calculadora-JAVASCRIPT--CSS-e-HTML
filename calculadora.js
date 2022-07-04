@@ -114,18 +114,18 @@ const teclado = {
     '9': 'botao9',
     'Backspace': 'backspace',
     'Enter': 'igual',
-    'c' : 'limparDisplay',
+    'c': 'limparDisplay',
     'Escape': 'limparCalc',
-    ',' : 'decimal',
-    '/' :  'operadorDivisao',
-    '*' : 'operadorMultiplicar',
-    '+' : 'operadorAdicao',
+    ',': 'decimal',
+    '/': 'operadorDivisao',
+    '*': 'operadorMultiplicar',
+    '+': 'operadorAdicao',
     '-': 'operadorSubtracao',
     '=': 'igual'
 }
 const teclasTeclado = (evento) => {
     const tecla = evento.key
     const teclaExiste = () => Object.keys(teclado).indexOf(tecla) != -1
-    if (teclaExiste()) document.getElementById (teclado[tecla]).click()
+    if (teclaExiste()) document.getElementById(teclado[tecla]).click()
 }
-document.addEventListener ('keydown', teclasTeclado);
+document.addEventListener('keydown', teclasTeclado);
